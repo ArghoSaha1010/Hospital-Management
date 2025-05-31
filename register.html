@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital</title>
+    <link rel="icon" href="./assets/hospital.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex justify-center items-center">
+    <div class="container mx-auto p-2">
+      
+      <div class="bg-white p-6 rounded-md shadow-lg max-w-md mx-auto">
+        <h1 class="font-semibold text-3xl mb-6 text-center">Register</h1>
+  
+        <form>
+            <div class="flex justify-between items-center gap-x-5">
+                <div class="mb-4">
+                    <input type="text" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="First Name" required />
+                  </div><div class="mb-4">
+                    <input type="text" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Last Name" required />
+                  </div>
+            </div>
+            <div class="mb-4">
+                <input type="date" class="w-full border border-gray-300 rounded px-3 py-2 text-gray-700" placeholder="Date Of Birth" required />
+            </div>
+            <div class="mb-4">
+                <input type="email" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Email" required />
+            </div>
+            <div class="mb-4">
+                <input type="password" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Password" required />
+            </div>
+            <div class="flex justify-center items-center">
+                <button class="bg-blue-500 text-white font-bold px-4 py-2 rounded hover:bg-blue-600"><span class="cursor-pointer">SignIn</span></button>
+            </div>
+        </form>
+  
+        <p class="mt-4 text-sm text-center">
+          Already have account? <a href="/login.html" class="underline text-blue-600 hover:text-blue-800">Login</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
