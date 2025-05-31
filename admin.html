@@ -17,17 +17,78 @@
 
   <div class="flex flex-col md:flex-row gap-2">
     <!-- Sidebar / Aside -->
-    <aside class="w-full md:w-1/5 bg-gray-200 p-6 shadow-md">
-        <h2 class="text-xl font-semibold mb-3">Sidebar</h2>
-        <p>This is additional info in the sidebar (aside).</p>
+    <aside class="w-full md:w-1/5 bg-[#3f4f57] p-6 shadow-md">
+        <h2 class="text-xl font-semibold mb-3 text-white">Productivity</h2>
+        <div class="flex flex-col gap-2">
+            <!-- 1st Button -->
+            <div class="flex justify-between items-center">
+              <a href="#" class="w-full">
+                <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+                  <span>Add Stuff</span>
+                  <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+                </li>
+              </a>
+            </div>
+          
+            <!-- 2nd Button -->
+            <div class="flex justify-between items-center">
+              <a href="#" class="w-full">
+                <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+                  <span>Add Doctor</span>
+                  <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+                </li>
+              </a>
+            </div>
+
+            <!-- 3rd Button -->
+            <div class="flex justify-between items-center">
+                <a href="#" class="w-full">
+                  <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+                    <span>Add Room</span>
+                    <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+                  </li>
+                </a>
+            </div>
+
+            <!-- 4th Button -->
+            <div class="flex justify-between items-center">
+                <a href="#" class="w-full">
+                  <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+                    <span>Add Department</span>
+                    <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+                  </li>
+                </a>
+            </div>
+
+            <!-- 5th Button -->
+            <div class="flex justify-between items-center">
+                <a href="#" class="w-full">
+                  <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+                    <span>Add Ambulance</span>
+                    <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+                  </li>
+                </a>
+            </div>
+
+            <!-- Second Button -->
+            <div class="flex justify-between items-center">
+                <a href="#" class="w-full">
+                  <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+                    <span>Add Doctor</span>
+                    <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+                  </li>
+                </a>
+            </div>
+          </div>
+          
     </aside>
     
     <!-- Main Content -->
-    <div class="flex-1 bg-white shadow-md">
+    <div class="flex-1 bg-[#e2f0fb80] shadow-md">
 
         <!-- navbar -->
         <nav>
-            <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar bg-[#e2f0fb80] shadow-sm">
                 <div class="flex-1">
                   <a href="#" class="text-xl font-semibold">Hospital Management</a>
                 </div>
@@ -80,21 +141,23 @@
             </div>
 
             <!-- graph start -->
-            <div class="container flex flex-col md:flex-row justify-between md:h-screen p-0 gap-10 max-w-4xl mx-auto pt-20">
+            <div class="container flex flex-col md:flex-row justify-between p-0 gap-10 max-w-4xl mx-auto pt-20 pb-20">
               <div class="w-full md:w-6/12 h-4/12 p-4 bg-white shadow rounded">
                 <canvas id="myChart1" class="w-full h-60"></canvas>
               </div>
               <div class="w-full md:w-6/12 h-4/12 p-4 bg-white shadow rounded">
                 <canvas id="myChart2" class="w-full h-60"></canvas>
               </div>
-            </div>              
+            </div>
+            
+            <!-- <div>
+
+            </div> -->
+
+
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script src="./graph.js"></script>                      
           </div>
-          
-
-         
-          
     </div>
   </div>
 </body>
