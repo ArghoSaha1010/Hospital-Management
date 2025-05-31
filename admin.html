@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/hospital.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <div class="flex flex-col md:flex-row gap-2">
+    <!-- Sidebar / Aside -->
+    <aside class="w-full md:w-1/5 bg-gray-200 p-6 shadow-md">
+        <h2 class="text-xl font-semibold mb-3">Sidebar</h2>
+        <p>This is additional info in the sidebar (aside).</p>
+    </aside>
+    
+    <!-- Main Content -->
+    <div class="flex-1 bg-white shadow-md">
+
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="flex-1">
+                  <a href="#" class="text-xl font-semibold">Hospital Management</a>
+                </div>
+                <div class="flex gap-2">
+                  <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img class="" alt="notification" src="./assets/bell.png" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="">
+                          notification
+                        </a>
+                    </ul>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img class="" alt="notification" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="">
+                          notification
+                        </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!-- END navbar -->
+         <!-- main body grid section -->
+         <div class="container p-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              <!-- grid boxes -->
+              <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Doctor <span>10+</span></div>
+              <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Stuff <span>20+</span></div>
+              <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Patient <span>9+</span></div>
+              <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Department <span>5+</span></div>
+              <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Room <span>20+</span></div>
+              <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Sales - <span>10,309$</span></div>
+            </div>
+
+            <!-- graph start -->
+            <div class="container flex flex-col md:flex-row justify-between md:h-screen p-0 gap-10 max-w-4xl mx-auto pt-20">
+              <div class="w-full md:w-6/12 h-4/12 p-4 bg-white shadow rounded">
+                <canvas id="myChart1" class="w-full h-60"></canvas>
+              </div>
+              <div class="w-full md:w-6/12 h-4/12 p-4 bg-white shadow rounded">
+                <canvas id="myChart2" class="w-full h-60"></canvas>
+              </div>
+            </div>              
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="./graph.js"></script>                      
+          </div>
+          
+
+         
+          
+    </div>
+  </div>
+</body>
+</html>
+
