@@ -41,18 +41,85 @@
               </div>
         </nav>
     </header>
-    <main>
-        <section class="w-full h-[91vh] bg-cover bg-center bg-no-repeat relative flex items-center" style="background-image: url('./assets/banner.png');">
+    <main class="bg-[rgb(248,248,250)]">
+        <section class="w-full min-h-screen bg-cover bg-center bg-no-repeat relative flex items-center justify-center sm:justify-start" style="background-image: url('./assets/banner.png');">
             <div class="absolute inset-0 bg-black/25"></div>
-
-            <div class="relative z-10 max-w-4xl px-8 py-12 text-white">
-                <label for="">HOSPITAL MANAGEMENT</label>
-                <h1 class="text-5xl font-bold mb-6">Hospital Management</h1>
-                <button class="bg-[rgb(211,175,146)] px-8 py-7 border-none shadow-lg hover:bg-[#dc9a64a2] transition-all duration-500 rounded-full cursor-pointer text-white font-semibold flex justify-center items-center gap-1 text-lg btn btn-ghost">Explore More <i class='bx  bx-arrow-out-up-right-square'  style='color:#ffffff'></i> </BUtton>
+          
+            <div class="relative z-10 max-w-4xl px-4 sm:px-6 md:px-8 py-10 sm:py-12 text-white text-center sm:text-left">
+              <label class="text-sm sm:text-base tracking-wide">HOSPITAL MANAGEMENT</label>
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">Hospital Management</h1>
+              <button class="bg-[rgb(211,175,146)] px-6 py-4 sm:px-8 sm:py-5 md:py-6 border-none shadow-lg hover:bg-[#dc9a64a2] transition-all duration-500 rounded-full cursor-pointer text-white font-semibold flex justify-center items-center gap-2 text-base sm:text-lg">
+                Explore More 
+                <i class='bx bx-arrow-out-up-right-square text-xl' style='color:#ffffff'></i>
+              </button>
             </div>
         </section>
-
           
+        <section class="w-full h-screen bg-cover bg-center bg-no-repeat relative flex items-center container mx-auto" style="background-image: url('./assets/specialize-desktop-100-2.png');">
+            <div class="absolute inset-0 "></div>
+          
+            <div class="relative z-10 w-full px-4 sm:px-6 md:px-12 py-12 text-[#3f4f57] flex justify-end">
+              <div class="max-w-2xl text-left">
+                <label class="text-sm sm:text-base tracking-wide block mb-2">24 HOUR SERVICE</label>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">Our doctors <br>specialize in you</h1>
+                <p class="font-semibold mb-4">From treating the rarest symptoms to performing the most complicated <br>  surgeries, we have expertise in your condition.</p>
+                <button class="bg-[#3f4f57] px-6 py-4 sm:px-8 sm:py-5 md:py-6 border-none shadow-lg  hover:bg-[#5e889d] transition-all duration-500 rounded-full cursor-pointer text-white font-semibold inline-flex justify-center items-center gap-2 text-base sm:text-lg">
+                  Take Appoint 
+                  <i class='bx bx-arrow-out-up-right-square text-xl' style='color:#ffffff'></i>
+                </button>
+              </div>
+            </div>
+        </section>
     </main>
+    <footer class="bg-[#1f2937] text-white pt-12 pb-6 px-4 sm:px-10 mt-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-600 pb-8">
+          
+          <!-- Logo & Name -->
+          <div>
+            <h2 class="text-2xl font-bold mb-3">MediCare Hospital</h2>
+            <p class="text-gray-300 text-sm">
+              Trusted healthcare with compassion, technology, and expert care.
+            </p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white transition">About Us</a></li>
+              <li><a href="#" class="hover:text-white transition">Departments</a></li>
+              <li><a href="#" class="hover:text-white transition">Doctors</a></li>
+              <li><a href="#" class="hover:text-white transition">Make Appointment</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>📍 123 Health Ave, City, Country</li>
+              <li>📞 +1 (123) 456-7890</li>
+              <li>✉️ info@medicare.com</li>
+            </ul>
+          </div>
+      
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4 text-xl">
+              <a href="#" class="hover:text-[#dc9a64] transition"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="#" class="hover:text-[#dc9a64] transition"><i class='bx bxl-instagram-alt'></i></a>
+              <a href="#" class="hover:text-[#dc9a64] transition"><i class='bx bxl-twitter'></i></a>
+              <a href="#" class="hover:text-[#dc9a64] transition"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Bottom Note -->
+        <div class="text-center text-gray-400 text-sm mt-6">
+          &copy; 2025 MediCare Hospital. All rights reserved.
+        </div>
+    </footer>
+      
 </body>
 </html>
