@@ -156,7 +156,7 @@
         </section>
             
         <!-- Add Stuff -->
-        <section class="hidden">
+        <section class="">
             <div class="container p-10">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-20">
                   <!-- grid boxes -->
@@ -165,150 +165,178 @@
                   <div class="bgForBox_Admin px-6 py-10 text-center font-semibold text-2xl rounded text-white btn "><button class="cursor-pointer">Receptionist</button></div>
                 </div>
 
-                <!-- Table -->
+
+                <!-- Tables -->
                 <div class="w-full flex flex-col justify-center items-center pb-26">
 
                     <!-- Table 1 -->
-                    <div class="w-1/2">
-                      <div class="overflow-x-auto">
-                        <table class="table table-zebra">
-                          <!-- head -->
-                          <thead>
-                            <tr>
-                              <th></th>
-                              <th>Name</th>
-                              <th>Job</th>
-                              <th>Hospital ID</th>
-                              <th>Blood Group</th>
-                              <th>Department</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <!-- row 1 -->
-                            <tr>
-                              <th>1</th>
-                              <td>Cy Ganderton</td>
-                              <td>Quality Control Specialist</td>
-                              <td>Blue</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                            </tr>
-                            <!-- row 2 -->
-                            <tr>
-                              <th>2</th>
-                              <td>Hart Hagerty</td>
-                              <td>Desktop Support Technician</td>
-                              <td>Blue</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                            </tr>
-                            <!-- row 3 -->
-                            <tr>
-                              <th>3</th>
-                              <td>Brice Swyre</td>
-                              <td>Tax Accountant</td>
-                              <td>Blue</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                    <div class="w-full flex flex-col justify-center items-center pb-36">
+                        <div class="w-7/12">
+                          <div class="overflow-x-auto">
+                            <table class="table table-zebra">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Nurse ID</th>
+                                  <th>Nurse Name</th>
+                                  <th>Department</th>
+                                  <th>Work Shift</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- Row 1 -->
+                                <tr>
+                                  <form action="submit.php" method="POST">
+                                    <th>1</th>
+                                    <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                    <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                    <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                    <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                    <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                  </form>
+                                </tr>
+                      
+                                <!-- Row 2 -->
+                                <tr>
+                                    <form action="submit.php" method="POST">
+                                      <th>1</th>
+                                      <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                      <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                      <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                    </form>
+                                </tr>
+                      
+                                <!-- Row 3 -->
+                                <tr>
+                                    <form action="submit.php" method="POST">
+                                      <th>1</th>
+                                      <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                      <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                      <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                    </form>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
                     </div>
 
                     <!-- Table 2 -->
-                    <div class="w-1/2">
-                        <div class="overflow-x-auto">
-                          <table class="table table-zebra">
-                            <!-- head -->
-                            <thead>
-                              <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Job</th>
-                                <th>Hospital ID</th>
-                                <th>Blood Group</th>
-                                <th>Department</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- row 1 -->
-                              <tr>
-                                <th>1</th>
-                                <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
-                                <td>Blue</td>
-                                <td>NULL</td>
-                                <td>NULL</td>
-                              </tr>
-                              <!-- row 2 -->
-                              <tr>
-                                <th>2</th>
-                                <td>Hart Hagerty</td>
-                                <td>Desktop Support Technician</td>
-                                <td>Blue</td>
-                                <td>NULL</td>
-                                <td>NULL</td>
-                              </tr>
-                              <!-- row 3 -->
-                              <tr>
-                                <th>3</th>
-                                <td>Brice Swyre</td>
-                                <td>Tax Accountant</td>
-                                <td>Blue</td>
-                                <td>NULL</td>
-                                <td>NULL</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                    <div class="w-full flex flex-col justify-center items-center pb-36">
+                        <div class="w-7/12">
+                          <div class="overflow-x-auto">
+                            <table class="table table-zebra">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Stuff ID</th>
+                                  <th>Stuff Name</th>
+                                  <th>Department</th>
+                                  <th>Work Shift</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- Row 1 -->
+                                <tr>
+                                  <form action="submit.php" method="POST">
+                                    <th>1</th>
+                                    <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                    <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                    <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                    <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                    <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                  </form>
+                                </tr>
+                      
+                                <!-- Row 2 -->
+                                <tr>
+                                    <form action="submit.php" method="POST">
+                                      <th>1</th>
+                                      <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                      <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                      <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                    </form>
+                                </tr>
+                      
+                                <!-- Row 3 -->
+                                <tr>
+                                    <form action="submit.php" method="POST">
+                                      <th>1</th>
+                                      <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                      <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                      <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                    </form>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                     </div>
 
                     <!-- Table 3 -->
-                    <div class="w-1/2">
-                        <div class="overflow-x-auto">
-                          <table class="table table-zebra">
-                            <!-- head -->
-                            <thead>
-                              <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Job</th>
-                                <th>Hospital ID</th>
-                                <th>Blood Group</th>
-                                <th>Department</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- row 1 -->
-                              <tr>
-                                <th>1</th>
-                                <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
-                                <td>Blue</td>
-                                <td>NULL</td>
-                                <td>NULL</td>
-                              </tr>
-                              <!-- row 2 -->
-                              <tr>
-                                <th>2</th>
-                                <td>Hart Hagerty</td>
-                                <td>Desktop Support Technician</td>
-                                <td>Blue</td>
-                                <td>NULL</td>
-                                <td>NULL</td>
-                              </tr>
-                              <!-- row 3 -->
-                              <tr>
-                                <th>3</th>
-                                <td>Brice Swyre</td>
-                                <td>Tax Accountant</td>
-                                <td>Blue</td>
-                                <td>NULL</td>
-                                <td>NULL</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                    <div class="w-full flex flex-col justify-center items-center pb-36">
+                        <div class="w-7/12">
+                          <div class="overflow-x-auto">
+                            <table class="table table-zebra">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Receptionist ID</th>
+                                  <th>Receptionist Name</th>
+                                  <th>Department</th>
+                                  <th>Work Shift</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- Row 1 -->
+                                <tr>
+                                  <form action="submit.php" method="POST">
+                                    <th>1</th>
+                                    <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                    <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                    <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                    <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                    <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                  </form>
+                                </tr>
+                      
+                                <!-- Row 2 -->
+                                <tr>
+                                    <form action="submit.php" method="POST">
+                                      <th>1</th>
+                                      <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                      <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                      <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                    </form>
+                                </tr>
+                      
+                                <!-- Row 3 -->
+                                <tr>
+                                    <form action="submit.php" method="POST">
+                                      <th>1</th>
+                                      <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                      <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                      <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                      <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                    </form>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                     </div>
 
@@ -325,53 +353,60 @@
                 </div>
 
                 <!-- Table  -->
-                <div class="w-full flex flex-col justify-center items-center pb-26">
-                    <div class="w-1/2">
+                <div class="w-full flex flex-col justify-center items-center pb-36">
+                    <div class="w-7/12">
                       <div class="overflow-x-auto">
                         <table class="table table-zebra">
-                          <!-- head -->
                           <thead>
                             <tr>
-                              <th></th>
-                              <th>Name</th>
-                              <th>Job</th>
-                              <th>Hospital ID</th>
-                              <th>Blood Group</th>
+                              <th>#</th>
+                              <th>Doctor ID</th>
+                              <th>Doctor Name</th>
                               <th>Department</th>
+                              <th>Vist Cost</th>
                               <th>Specialist</th>
+                              <th>Action</th>
                             </tr>
                           </thead>
                           <tbody>
-                            <!-- row 1 -->
+                            <!-- Row 1 -->
                             <tr>
-                              <th>1</th>
-                              <td>Cy Ganderton</td>
-                              <td>Quality Control Specialist</td>
-                              <td>Blue</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
+                              <form action="submit.php" method="POST">
+                                <th>1</th>
+                                <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                <td><input type="text" name="department" class="input input-bordered w-full max-w-xs" placeholder="Specialist" value="" /></td>
+                                <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                              </form>
                             </tr>
-                            <!-- row 2 -->
+                  
+                            <!-- Row 2 -->
                             <tr>
-                              <th>2</th>
-                              <td>Hart Hagerty</td>
-                              <td>Desktop Support Technician</td>
-                              <td>Blue</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                            </tr>
-                            <!-- row 3 -->
+                                <form action="submit.php" method="POST">
+                                  <th>1</th>
+                                  <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                  <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                  <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                  <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                  <td><input type="text" name="department" class="input input-bordered w-full max-w-xs" placeholder="Specialist" value="" /></td>
+                                  <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                </form>
+                              </tr>
+                  
+                            <!-- Row 3 -->
                             <tr>
-                              <th>3</th>
-                              <td>Brice Swyre</td>
-                              <td>Tax Accountant</td>
-                              <td>Blue</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                              <td>NULL</td>
-                            </tr>
+                                <form action="submit.php" method="POST">
+                                  <th>1</th>
+                                  <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="ID" value="" /></td>
+                                  <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                  <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Name" value="" /></td>
+                                  <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Visit" value="" /></td>
+                                  <td><input type="text" name="department" class="input input-bordered w-full max-w-xs" placeholder="Specialist" value="" /></td>
+                                  <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                </form>
+                              </tr>
                           </tbody>
                         </table>
                       </div>
@@ -380,6 +415,76 @@
             </div>
         </section>
 
+        <!-- Add Room -->
+        <section class="hidden">
+            <div class="container mx-auto flex flex-col gap-5 justify-center items-center pt-20">
+                <div class="bgForBox_Admin px-20 py-10 text-center font-semibold text-2xl rounded text-white btn mb-20">
+                    <button class="cursor-pointer">Room</button>
+                </div>
+
+                <!-- Table  -->
+                <div class="w-full flex flex-col justify-center items-center pb-36">
+                    <div class="w-7/12">
+                      <div class="overflow-x-auto">
+                        <table class="table table-zebra">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>VIP</th>
+                              <th>Room Number</th>
+                              <th>ICU</th>
+                              <th>OT</th>
+                              <th>Department</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                              <form action="submit.php" method="POST">
+                                <th>1</th>
+                                <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Room Number" value="" /></td>
+                                <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                <td><input type="text" name="department" class="input input-bordered w-full max-w-xs" placeholder="Dept Name" value="" /></td>
+                                <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                              </form>
+                            </tr>
+                  
+                            <!-- Row 2 -->
+                            <tr>
+                                <form action="submit.php" method="POST">
+                                  <th>1</th>
+                                  <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                  <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Room Number" value="" /></td>
+                                  <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                  <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                  <td><input type="text" name="department" class="input input-bordered w-full max-w-xs" placeholder="Dept Name" value="" /></td>
+                                  <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                </form>
+                              </tr>
+                  
+                            <!-- Row 3 -->
+                            <tr>
+                                <form action="submit.php" method="POST">
+                                  <th>1</th>
+                                  <td><input type="text" name="vip" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                  <td><input type="text" name="room" class="input input-bordered w-full max-w-xs" placeholder="Room Number" value="" /></td>
+                                  <td><input type="text" name="icu" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                  <td><input type="text" name="ot" class="input input-bordered w-full max-w-xs" placeholder="Y/N" value="" /></td>
+                                  <td><input type="text" name="department" class="input input-bordered w-full max-w-xs" placeholder="Dept Name" value="" /></td>
+                                  <td><button type="submit" class="btn btn-primary bgForBox_Admin text-white font-semibold">Submit</button></td>
+                                </form>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+                  
+            </div>
+        </section>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="./graph.js"></script>                      
         </div>
