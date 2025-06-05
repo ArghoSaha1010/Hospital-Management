@@ -32,7 +32,14 @@
             <div class="mb-4">
                 <input type="email" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Email" required />
             </div>
-            <div class="mb-4">
+            <select class="w-full border border-gray-300 rounded px-3 py-2 text-gray-700 cursor-pointer" required onchange="this.classList.remove('text-gray-400')">
+              <option value="" disabled selected hidden>Register As</option>
+              <option value="Cardiology" class="text-[#3f4f57]">Admin</option>
+              <option value="Neurology" class="text-[#3f4f57]">Doctor</option>
+              <option value="Orthopedics" class="text-[#3f4f57]">Stuff</option>
+              <option value="General Medicine" class="text-[#3f4f57]">Patient</option>
+            </select>
+            <div class="my-4">
                 <input type="password" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Password" required />
             </div>
             <div class="flex justify-center items-center">
