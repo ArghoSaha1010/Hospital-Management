@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/hospital.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Main Content Wrapper -->
+  <div class="flex-1 flex flex-col md:flex-row">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-1/5 bg-[#3f4f57] p-6">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Productivity</h2>
+      <div class="flex flex-col gap-2">
+
+        <!-- Sidebar Buttons -->
+
+        <a href="#" class="w-full">
+          <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+            <span class="font-semibold">My Dashboard</span>
+            <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+          </li>
+        </a>
+
+        <a href="#" class="w-full">
+            <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+              <span class="font-semibold">Update Lab-Reports</span>
+              <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+            </li>
+        </a>
+
+        <a href="#" class="w-full">
+          <li class="list-none cursor-pointer bg-[#e2f0fb80] rounded-md px-2 py-1 flex items-center justify-between w-full">
+            <span class="font-semibold">Patient Appointments</span>
+            <i class="bx bxs-plus-circle text-xl" style="color: #000;"></i>
+          </li>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 max-w-6xl mx-auto p-8">
+
+        <!-- main body grid section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-4xl mx-auto py-20">
+            <!-- grid boxes -->
+            <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">Total Appointments<span>10+</span></div>
+            <div class="bgForBox_Admin p-6 text-center font-semibold text-2xl rounded shadow text-white">work Shift of me<span>20+</span></div>
+        </div>
+
+        <h1 class="text-3xl font-bold mb-6 text-center pb-10 pt-20">Update Patient Lab-Reports</h1>
+        <div class="overflow-x-auto pb-40">
+            <table class="table w-full bg-white shadow rounded-lg">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Hospital ID</th>
+                  <th>Department</th>
+                  <th>Lab Report</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1 -->
+                <tr>
+                  <td>1</td>
+                  <td>Cy Ganderton</td>
+                  <td>HOSP001</td>
+                  <td>Cardiology</td>
+                  <td>
+                    <select class="select select-bordered select-sm w-full max-w-xs">
+                      <option disabled selected>Select Report</option>
+                      <option>Below Average</option>
+                      <option>Average</option>
+                      <option>Good</option>
+                      <option>Negative</option>
+                      <option>NULL</option>
+                    </select>
+                  </td>
+                  <td><span class="badge badge-warning rounded-sm">Pending</span></td>
+                  <td>
+                    <button class="btn btn-sm bg-[#3f4f57] text-white hover:bg-[#60585875] hover:text-black">Submit Lab Report</button>
+                  </td>
+                </tr>
+          
+                <!-- Row 2 -->
+                <tr>
+                  <td>2</td>
+                  <td>Hart Hagerty</td>
+                  <td>HOSP002</td>
+                  <td>Neurology</td>
+                  <td>
+                    <select class="select select-bordered select-sm w-full max-w-xs">
+                      <option disabled selected>Select Report</option>
+                      <option>Below Average</option>
+                      <option>Average</option>
+                      <option>Good</option>
+                      <option>Negative</option>
+                      <option>NULL</option>
+                    </select>
+                  </td>
+                  <td><span class="badge badge-warning rounded-sm">Pending</span></td>
+                  <td>
+                    <button class="btn btn-sm bg-[#3f4f57] text-white hover:bg-[#60585875] hover:text-black">Submit Lab Report</button>
+                  </td>
+                </tr>
+          
+                <!-- Row 3 -->
+                <tr>
+                  <td>3</td>
+                  <td>Jane Doe</td>
+                  <td>HOSP003</td>
+                  <td>Orthopedics</td>
+                  <td>
+                    <select class="select select-bordered select-sm w-full max-w-xs" disabled>
+                      <option selected>Good</option>
+                    </select>
+                  </td>
+                  <td><span class="badge badge-success rounded-sm">Done</span></td>
+                  <td>
+                    <button class="btn btn-disabled btn-sm bg-gray-300 text-gray-600">Submitted</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+
+        <!-- Patient Appointments -->
+        <section>
+            <h1 class="text-3xl font-bold mb-6 text-center pb-10 pt-20">Patient Appointments</h1>
+
+            <div class="overflow-x-auto pb-40">
+                <table class="table w-full bg-white shadow rounded-lg">
+                <thead class="bg-gray-200">
+                    <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Hospital ID</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                    <td>1</td>
+                    <td>Cy Ganderton</td>
+                    <td>HOSP001</td>
+                    <td>Cardiology</td>
+                    
+                    <td><span class="badge badge-warning rounded-sm">Pending</span></td>
+                    <td>
+                        <details class="dropdown dropdown-top">
+                        <summary class="btn btn-sm bg-[#3f4f57] text-white hover:bg-[#60585875] hover:text-black">View Details</summary>
+                        <ul class="p-4 space-y-2 bg-white shadow-md rounded w-72 z-50">
+                            <li><strong>Doctor:</strong> Dr. Rahim</li>
+                            <li><strong>Dept:</strong> Cardiology</li>
+                            <li><strong>ID:</strong> HOSP001</li>
+                            <li><button class="btn btn-success btn-sm w-full mt-2 text-white text-sm">Approve</button></li>
+                        </ul>
+                        </details>
+                    </td>
+                    </tr>
+            
+                    <!-- Row 2 -->
+                    <tr>
+                    <td>2</td>
+                    <td>Hart Hagerty</td>
+                    <td>HOSP002</td>
+                    <td>Neurology</td>
+                    
+                    <td><span class="badge badge-warning rounded-sm">Pending</span></td>
+                    <td>
+                        <details class="dropdown dropdown-top">
+                        <summary class="btn btn-sm bg-[#3f4f57] text-white hover:bg-[#60585875] hover:text-black">View Details</summary>
+                        <ul class="p-4 space-y-2 bg-white shadow-md rounded w-72 z-50">
+                            <li><strong>Doctor:</strong> Dr. Karim</li>
+                            <li><strong>Dept:</strong> Neurology</li>
+                            <li><strong>ID:</strong> HOSP002</li>
+                            <li><button class="btn btn-success btn-sm w-full mt-2 text-white text-sm">Approve</button></li>
+                        </ul>
+                        </details>
+                    </td>
+                    </tr>
+            
+                    <!-- Row 3 -->
+                    <tr>
+                    <td>3</td>
+                    <td>Jane Doe</td>
+                    <td>HOSP003</td>
+                    <td>Orthopedics</td>
+                    
+                    <td><span class="badge badge-success rounded-sm">Done</span></td>
+                    <td>
+                        <button class="btn btn-disabled btn-sm bg-gray-300 text-gray-600">Approved</button>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#3f4f57] text-white pt-12 pb-6 px-4 sm:px-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8  border-b border-gray-600 pb-8">
+      
+      <!-- Logo & Name -->
+      <div>
+        <h2 class="text-2xl font-bold mb-3">MediCare Hospital</h2>
+        <p class="text-gray-300 text-sm">
+          Trusted healthcare with compassion, technology, and expert care.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Departments</a></li>
+          <li><a href="#" class="hover:text-white transition">Doctors</a></li>
+          <li><a href="#" class="hover:text-white transition">Make Appointment</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contact</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>📍 123 Health Ave, City, Country</li>
+          <li>📞 +1 (123) 456-7890</li>
+          <li>✉️ info@medicare.com</li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+        <div class="flex space-x-4 text-xl">
+            <a href="#">
+                <button class="btn bg-transparent text-white rounded-full border-none">
+                    <svg aria-label="Facebook logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z"></path></svg>
+                </button>
+            </a>
+            <a href="#">
+                <button class="btn bg-transparent text-white rounded-full border-none">
+                    <svg aria-label="X logo" width="16" height="16" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"/></svg>
+                </button>
+            </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Note -->
+    <div class="text-center text-gray-400 text-sm mt-6">
+      &copy; 2025 MediCare Hospital. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

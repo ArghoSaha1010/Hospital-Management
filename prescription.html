@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/hospital.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-[#e2f0fb80]">
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-[#e2f0fb80] shadow-sm">
+                <div class="flex-1">
+                  <a href="#" class="text-3xl font-semibold">MediCare Hospital</a>
+                </div>
+                <div class="flex gap-2">
+                  <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img class="" alt="notification" src="./assets/bell.png" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="">
+                          notification
+                        </a>
+                    </ul>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img class="" alt="notification" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a href="./guest.html" class="">
+                          <button>Log out</button>
+                        </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!-- END navbar -->
+    </header>
+
+    <main>
+        <div class="py-20">
+        <div class="container mx-auto pt-16 max-w-2xl p-6 bg-white rounded shadow-lg py-10">
+            <h2 class="text-2xl font-bold text-center mb-6">Patient Zone</h2>
+        
+            <div class="mb-4">
+                <p><strong>Patient ID:</strong> HOSP001</p>
+                <p><strong>Name:</strong> Cy Ganderton</p>
+                <p><strong>Department:</strong> Pathology</p>
+            </div>
+        
+            <div class="mb-4">
+                <h3 class="font-semibold">Lab Test Result:</h3>
+                <p class="p-2 bg-green-100 rounded">Status: Average</p>
+            </div>
+        
+                <form action="" method="get">
+                    <div class="mb-4">
+                        <h3 class="font-semibold">Write Prescription:</h3>
+                        <textarea rows="4" class="w-full textarea" required></textarea>
+                    </div>
+                
+                    <div class="flex justify-between items-center">
+                        <button type="submit" class="btn  bgForBox_Admin text-white">Submit Prescription</button>
+                        <span class="text-yellow-600 font-semibold">Status: Not Done</span>
+                    </div>
+                </form>
+        
+                <div class="text-center mt-6">
+                <a href="./doctor.html" class="btn btn-outline btn-sm">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+      <!-- <script>
+      
+        const params = new URLSearchParams(window.location.search);
+        const hospitalId = params.get('id');
+    
+        // You can pull patient info based on ID from localStorage or predefined logic
+        const patientData = {
+          "HOSP001": { name: "Cy Ganderton", department: "Pathology", lab: "Average" },
+          "HOSP002": { name: "Hart Hagerty", department: "Neurology", lab: "Good" },
+        };
+    
+        const info = patientData[hospitalId];
+        document.getElementById("hospitalId").innerText = hospitalId;
+        document.getElementById("patientName").innerText = info.name;
+        document.getElementById("department").innerText = info.department;
+        document.getElementById("labResult").innerText = info.lab;
+    
+        // Load previous prescription if already done
+        const storageKey = "prescription_" + hospitalId;
+        const savedPrescription = localStorage.getItem(storageKey);
+        if (savedPrescription) {
+          document.getElementById("prescriptionText").value = savedPrescription;
+          document.getElementById("submitBtn").disabled = true;
+          document.getElementById("doneStatus").innerText = "Done";
+          document.getElementById("doneStatus").classList.replace("text-yellow-600", "text-green-600");
+        }
+    
+        function submitPrescription() {
+          const text = document.getElementById("prescriptionText").value.trim();
+          if (text === "") {
+            alert("Please write a prescription.");
+            return;
+          }
+    
+          // Save to localStorage
+          localStorage.setItem(storageKey, text);
+          document.getElementById("submitBtn").disabled = true;
+          document.getElementById("doneStatus").innerText = "Done";
+          document.getElementById("doneStatus").classList.replace("text-yellow-600", "text-green-600");
+        }
+      </script> -->
+    
+      <footer class="bg-[#3f4f57] text-white pt-12 pb-6 px-4 sm:px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8  border-b border-gray-600 pb-8">
+          
+          <!-- Logo & Name -->
+          <div>
+            <h2 class="text-2xl font-bold mb-3">MediCare Hospital</h2>
+            <p class="text-gray-300 text-sm">
+              Trusted healthcare with compassion, technology, and expert care.
+            </p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white transition">About Us</a></li>
+              <li><a href="#" class="hover:text-white transition">Departments</a></li>
+              <li><a href="#" class="hover:text-white transition">Doctors</a></li>
+              <li><a href="#" class="hover:text-white transition">Make Appointment</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>📍 123 Health Ave, City, Country</li>
+              <li>📞 +1 (123) 456-7890</li>
+              <li>✉️ info@medicare.com</li>
+            </ul>
+          </div>
+      
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4 text-xl">
+                <a href="#">
+                    <button class="btn bg-transparent text-white rounded-full border-none">
+                        <svg aria-label="Facebook logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z"></path></svg>
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="btn bg-transparent text-white rounded-full border-none">
+                        <svg aria-label="X logo" width="16" height="16" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"/></svg>
+                    </button>
+                </a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Bottom Note -->
+        <div class="text-center text-gray-400 text-sm mt-6">
+          &copy; 2025 MediCare Hospital. All rights reserved.
+        </div>
+      </footer>
+</body>
+</html>
